@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:300');
+* {
+	margin: 0px;
+	padding: 0px;
+	background: purple;
+}
+
+header{
+	align-items: center;
+	padding: 49px;
+}
+
+nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+nav ul li{
+	display: inline;
+	margin: 3%;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 19px;
+	color: rgb(249, 249, 249);
+	/*font-style: all;*/
+	text-align: left;
+	line-height: 22.8px;
+	letter-spacing: 0em;
+}
+
+nav ul li:last-child{
+	border-radius: 50px;
+	border: solid rgb(249,249,249) 2px;
+	padding: 15px;
+}
