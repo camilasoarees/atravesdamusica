@@ -1,15 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Catamaran:300');
+@import url(href="https://fonts.googleapis.com/css?family=Catamaran:300,900|Source+Sans+Pro" rel="stylesheet">);
 * {
 	margin: 0px;
 	padding: 0px;
-	background: purple;
 }
 
 header{
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 	padding: 49px;
+	background: url(fotos/nove.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
-
+nav{
+	height: 22.8px;
+	position: absolute;
+	left: 30%;
+}
 nav ul{
 	display: flex;
 	justify-content: center;
@@ -17,18 +25,99 @@ nav ul{
 }
 nav ul li{
 	display: inline;
-	margin: 3%;
+	margin-left: 3%;
+	margin-right: 3%;
 	font-family: 'Catamaran', sans-serif;
 	font-size: 19px;
 	color: rgb(249, 249, 249);
-	/*font-style: all;*/
+	text-transform: uppercase;
 	text-align: left;
 	line-height: 22.8px;
 	letter-spacing: 0em;
 }
 
 nav ul li:last-child{
-	border-radius: 50px;
-	border: solid rgb(249,249,249) 2px;
-	padding: 15px;
+
+	border-radius: 20px;
+	border: solid rgb(249,249,249) 1px;
+	padding: 10px;
+}
+.onda{
+	width: 116%;
+
+}
+header h1 {
+	/*position: absolute;*/
+	font-family:'Catamaran', sans-serif;
+	font-size: 26px;
+	color: rgb(255, 255, 255);
+]	text-transform: uppercase;
+	text-align: left;
+	line-height: 31.2px;
+	letter-spacing: 0em;
+	top: 525px;
+	left: 60%;
+}
+
+header h2 {
+	position: relative;
+	font-family:'Catamaran', sans-serif;
+	font-size: 23px;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 27.6px;
+	letter-spacing: 0em;
+	top: 595px;
+	left: 60%;
+}
+main{
+	/*position: relative;*/
+	display: flex;
+	flex-direction: column;
+}
+.sobre{
+	/*position: absolute;*/
+	background: url(assets/assets-02-desktop.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.fundosobre{
+	position: absolute;
+}
+.sobre h2{
+	position: relative
+	;
+	font-family:'Catamaran', sans-serif;
+	font-size: 26px;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 31.2px;
+	letter-spacing: 0em;
+	padding-top: 190px;
+	left: 380px;
+}
+
+.sobre p {
+	position: relative;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	font-style: normal;
+	text-align: left;
+	line-height: 24px;
+	letter-spacing: 0em;
+	padding-top: 20px;
+	width: 31%;
+	left: 280px;
+}
+
+.atividades{
+	position: relative;
+	background: purple;
+}
+.atividades img{
+	width: 100px;
+	height: 160px;
 }
