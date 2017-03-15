@@ -47,11 +47,11 @@ nav ul li:last-child{
 
 }
 header h1 {
-	/*position: absolute;*/
+	position: absolute;
 	font-family:'Catamaran', sans-serif;
 	font-size: 26px;
 	color: rgb(255, 255, 255);
-]	text-transform: uppercase;
+	text-transform: uppercase;
 	text-align: left;
 	line-height: 31.2px;
 	letter-spacing: 0em;
@@ -60,7 +60,7 @@ header h1 {
 }
 
 header h2 {
-	position: relative;
+	position: absolute;
 	font-family:'Catamaran', sans-serif;
 	font-size: 23px;
 	color: rgb(255, 255, 255);
@@ -86,8 +86,7 @@ main{
 	position: absolute;
 }
 .sobre h2{
-	position: relative
-	;
+	position: relative;
 	font-family:'Catamaran', sans-serif;
 	font-size: 26px;
 	color: rgb(255, 255, 255);
@@ -96,7 +95,7 @@ main{
 	line-height: 31.2px;
 	letter-spacing: 0em;
 	padding-top: 190px;
-	left: 380px;
+	left: 320px;
 }
 
 .sobre p {
@@ -110,14 +109,80 @@ main{
 	letter-spacing: 0em;
 	padding-top: 20px;
 	width: 31%;
-	left: 280px;
+	left: 320px;
+}
+section{
+	min-height: 100vh;
 }
 
 .atividades{
-	position: relative;
 	background: purple;
+	display: flex;
+	flex-direction: column;
 }
-.atividades img{
+
+.atividade1{
+	top: 63px;
+}
+.atividade1 img{
+	width: 22%;
+}
+
+.atividade2{
+	display: flex;
+
+}
+
+.oficina{
+	position: relative;
+	/*display: flex;*/
+	/*position: relative;*/
+	width: 22%;
+	/*margin-left: 20px;*/
+}
+
+.oficina div{
+	position: absolute;
+	width: 80%;
+	height: 40%;
+	top: 250px;
+	left: 30px;
+	border-bottom: solid #fff 8px;
+}
+
+.oficina h3{
+	font-family: 'Catamaran', sans-serif;
+	font-size: 20px;
+	color: rgb(255,255,255);
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 26.4px;
+	letter-spacing: 0em;
+	margin-bottom: 13px;
+	/*margin-left: 20px;*/
+}
+.oficina p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+	color: rgb(255,255,255);
+	font-style: normal;
+	text-align: left;
+	line-height: 16.8px;
+	letter-spacing: 0em;
+	/*margin-left: 20px;*/
+}
+.oficina ul li{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	color: rgb(255,255,255);
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 16.8px;
+	letter-spacing: 0em;
+	margin-left: 20px;
+}
+
+.galeria img{
 	width: 100px;
 	height: 160px;
 }
