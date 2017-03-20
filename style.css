@@ -72,12 +72,10 @@ header h2 {
 	left: 60%;
 }
 main{
-	/*position: relative;*/
 	display: flex;
 	flex-direction: column;
 }
 .sobre{
-	/*position: absolute;*/
 	background: url(assets/assets-02-desktop.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -120,9 +118,31 @@ section{
 	display: flex;
 	flex-direction: column;
 }
-
 .atividade1{
-	top: 63px;
+	position: relative;
+	left: 29%;
+	margin-top: 63px;
+}
+.atividade1 h2{
+	font-family:'Catamaran', sans-serif;
+	font-size: 26px;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 31.2px;
+	letter-spacing: 0em;
+}
+.atividade1 p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	font-style: normal;
+	text-align: left;
+	line-height: 20px;
+	letter-spacing: 0em;
+	padding-top: 15px;
+	width: 30%;
+	padding-bottom: 35px;
 }
 .atividade1 img{
 	width: 22%;
@@ -130,15 +150,12 @@ section{
 
 .atividade2{
 	display: flex;
-
+	justify-content: center;
 }
 
 .oficina{
 	position: relative;
-	/*display: flex;*/
-	/*position: relative;*/
 	width: 22%;
-	/*margin-left: 20px;*/
 }
 
 .oficina div{
@@ -159,7 +176,6 @@ section{
 	line-height: 26.4px;
 	letter-spacing: 0em;
 	margin-bottom: 13px;
-	/*margin-left: 20px;*/
 }
 .oficina p{
 	font-family: 'Source Sans Pro', sans-serif;
@@ -169,7 +185,6 @@ section{
 	text-align: left;
 	line-height: 16.8px;
 	letter-spacing: 0em;
-	/*margin-left: 20px;*/
 }
 .oficina ul li{
 	font-family: 'Source Sans Pro', sans-serif;
@@ -182,7 +197,51 @@ section{
 	margin-left: 20px;
 }
 
-.galeria img{
-	width: 100px;
-	height: 160px;
+.contribua{
+	background: url(assets/assets-03-desktop.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 200vh;
+}
+
+.galeria h2{
+	font-family: 'Catamaran', sans-serif;
+	font-size: 26px;
+	color: rgb(122, 5, 131);
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 31.2px;
+	letter-spacing: 0em;
+}
+.div-galeria{
+	display:flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.div-galeria img{
+	width: 15%;
+	padding: 15px;
+}
+.next1{
+	width: 3%;
+}
+.next2{
+	width: 3%;
+}
+.div-contri{
+	left: 56%;
+	margin-top: 340px;
+	margin-bottom: 57px;
+}
+.div-contri h2{
+	font-family: 'Catamaran', sans-serif;
+	font-size: 26px;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 31.2px;
+	letter-spacing: 0em;
+}
+footer img{
+	width: 10%;
 }
