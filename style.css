@@ -1,23 +1,34 @@
-@import url(href="https://fonts.googleapis.com/css?family=Catamaran:300,900|Source+Sans+Pro" rel="stylesheet">);
+@import url('https://fonts.googleapis.com/css?family=Catamaran:300,900|Source+Sans+Pro');
 
-* {
-	margin: 0px;
-	padding: 0px;
+html, body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-
+*, *:before, *:after{
+	box-sizing: border-box;
+	position: relative;
+}
 header{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 49px;
-	background: url(fotos/nove.jpg);
+	width:100%;
+	min-height: 100vh;
+	/*padding: 49px;*/
+	background: url(assets/edit3.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
+	/*background-position: center;*/
 }
-nav{
+nav{ 
 	height: 22.8px;
 	position: absolute;
-	left: 30%;
+	left: 25%;
+	top: 20px;
 }
 nav ul{
 	display: flex;
@@ -29,6 +40,7 @@ nav ul li{
 	margin-left: 3%;
 	margin-right: 3%;
 	font-family: 'Catamaran', sans-serif;
+	font-weight: 300;
 	font-size: 19px;
 	color: rgb(249, 249, 249);
 	text-transform: uppercase;
@@ -45,19 +57,20 @@ nav ul li:last-child{
 }
 .onda{
 	width: 116%;
-
 }
+
 header h1 {
 	position: absolute;
 	font-family:'Catamaran', sans-serif;
+	font-weight: 900;
 	font-size: 26px;
 	color: rgb(255, 255, 255);
 	text-transform: uppercase;
 	text-align: left;
 	line-height: 31.2px;
 	letter-spacing: 0em;
-	top: 525px;
-	left: 60%;
+	top: 470px;
+	left: 750px;
 }
 
 header h2 {
@@ -69,9 +82,17 @@ header h2 {
 	text-align: left;
 	line-height: 27.6px;
 	letter-spacing: 0em;
-	top: 595px;
-	left: 60%;
+	top: 540px;
+	left: 750px;
 }
+
+.logo{
+	position: absolute;
+	bottom: 20px;
+	right: 3%;
+	width: 9%;
+}
+
 main{
 	display: flex;
 	flex-direction: column;
@@ -94,7 +115,7 @@ main{
 	line-height: 31.2px;
 	letter-spacing: 0em;
 	padding-top: 190px;
-	left: 320px;
+	left: 290px;
 }
 
 .sobre p {
@@ -106,9 +127,9 @@ main{
 	text-align: left;
 	line-height: 24px;
 	letter-spacing: 0em;
-	padding-top: 20px;
+	padding-top: 10px;
 	width: 31%;
-	left: 320px;
+	left: 290px;
 }
 section{
 	min-height: 100vh;
@@ -162,7 +183,7 @@ section{
 .oficina div{
 	position: absolute;
 	width: 80%;
-	height: 40%;
+	height: 44%;
 	top: 250px;
 	left: 30px;
 	border-bottom: solid #fff 8px;
@@ -202,7 +223,7 @@ section{
 	background: url(assets/assets-03-desktop.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	min-height: 200vh;
+	height: 210vh;
 }
 .galeria{
 	display: flex;
@@ -259,10 +280,7 @@ section{
 	width: 520px;
 	height: 450px;
 	left: 640px;
-	top: 440px;
-	background: rgba(255,255,150,0.5);
-	/*margin-top: 340px;
-	margin-bottom: 57px;*/
+	top: 430px;
 }
 .div-contri h2{
 	font-family: 'Catamaran', sans-serif;
@@ -272,21 +290,29 @@ section{
 	text-align: left;
 	line-height: 31.2px;
 	letter-spacing: 0em;
+	left: 50px;
 }
 .div-contri div{
 	position: absolute;
-	width: 200px;
-	height: 200px;
-	background: blue;
+	/*width: 200px;
+	height: 200px;*/
 	margin: 20px;
+	padding-left: 0;
+	/*background: red;*/
 }
 .doemat{
-	top: 50px;
-	left: 20px;
+	top: 25px;
+	left: 30px;
+	height: 170px;
+	width: 180px;
+	border-bottom: solid #fff 7px;
 }
 .doeali{
-	top: 60px;
+	top: 70px;
 	left: 250px;
+	height: 200px;
+	width: 180px;
+	border-bottom: solid #fff 7px;
 }
 .div-contri div p{
 	font-family: 'Source Sans Pro', sans-serif;
@@ -294,8 +320,12 @@ section{
 	color: rgb(255, 255, 255);
 	font-style: normal;
 	text-align: left;
-	line-height: 24px;
+	/*line-height: 24px;*/
 	letter-spacing: 0em;
+	bottom: 0;
+	top: 0;
+	padding: 0;
+
 }
 .div-contri div p span {
 	font-weight: bold;
@@ -313,6 +343,22 @@ section{
 	bottom: 40px;
 	padding: 0 10%;
 }
+footer{
+	display: flex;
+	bottom: 0px;
+	background: purple;
+	width: 100%;
+	height: 107px;
+}
 footer img{
-	width: 10%;
+	width: 35px;
+}
+footer p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+	font-style: normal;
+	text-align: left;
+	line-height: 16.8px;
+	letter-spacing: 0em;
 }
