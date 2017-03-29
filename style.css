@@ -399,3 +399,42 @@ footer p{
 	text-align: left;
 	letter-spacing: 0em;
 }
+@media (max-width: 600px){
+	
+	header{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+	}
+	nav{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding: 0;
+	}
+	nav ul {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding: 0;
+	}
+	nav ul li{
+		margin: 2% 0;
+	}
+	.onda{
+		/*width: 116%;*/
+		display: none;
+	}
+	.ondamobile{
+		display: block;
+		width: 100%;
+	}
+	.logo{
+		position: relative;
+		width: 10%;
+		margin-top: 50%;
+	}
+}
