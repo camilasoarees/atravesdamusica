@@ -8,10 +8,13 @@ html, body {
 	justify-content: center;
 	align-items: center;
 }
+
+
 *, *:before, *:after{
 	box-sizing: border-box;
 	position: relative;
 }
+
 header{
 	display: flex;
 	flex-direction: column;
@@ -22,19 +25,22 @@ header{
 	background: url(assets/edit3.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
+	overflow: hidden;
 	/*background-position: center;*/
 }
+
 nav{ 
-	height: 22.8px;
-	position: absolute;
-	left: 25%;
-	top: 20px;
+	height: 22px;
+	margin-top: 20px;
 }
+
 nav ul{
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
+	padding: 0;
 }
+
 nav ul li{
 	display: inline;
 	margin-left: 3%;
@@ -50,13 +56,14 @@ nav ul li{
 }
 
 nav ul li:last-child{
-
 	border-radius: 20px;
 	border: solid rgb(249,249,249) 1px;
 	padding: 10px;
 }
+
 .onda{
-	width: 116%;
+	margin-top: 20px;
+	width: 105%;
 }
 
 header h1 {
@@ -102,11 +109,12 @@ main{
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
+
 .fundosobre{
 	position: absolute;
 }
-.sobre h2{
-	position: relative;
+
+.sobre h2 {
 	font-family:'Catamaran', sans-serif;
 	font-size: 26px;
 	color: rgb(255, 255, 255);
@@ -114,12 +122,11 @@ main{
 	text-align: left;
 	line-height: 31.2px;
 	letter-spacing: 0em;
-	padding-top: 14%;
-	left: 23%;
+	padding-top: 12.5%;
+	padding-left: 23%;
 }
 
 .sobre p {
-	position: relative;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
 	color: rgb(255, 255, 255);
@@ -128,9 +135,10 @@ main{
 	line-height: 24px;
 	letter-spacing: 0em;
 	padding-top: 10px;
-	width: 31%;
-	left: 23%;
+	width: 60%;
+	padding-left: 23%;
 }
+
 section{
 	min-height: 100vh;
 }
@@ -140,11 +148,12 @@ section{
 	display: flex;
 	flex-direction: column;
 }
+
 .atividade1{
-	position: relative;
-	left: 29%;
+	padding-left: 29%;
 	margin-top: 63px;
 }
+
 .atividade1 h2{
 	font-family:'Catamaran', sans-serif;
 	font-size: 26px;
@@ -154,6 +163,7 @@ section{
 	line-height: 31.2px;
 	letter-spacing: 0em;
 }
+
 .atividade1 p{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
@@ -163,9 +173,10 @@ section{
 	line-height: 20px;
 	letter-spacing: 0em;
 	padding-top: 15px;
-	width: 30%;
+	width: 40%;
 	padding-bottom: 35px;
 }
+
 .atividade2 img{
 	width: 100%;
 	bottom: 25px;
@@ -226,6 +237,7 @@ section{
 	background-size: 100%;
 	height: 210vh;
 }
+
 .galeria{
 	display: flex;
 	justify-content: center;
@@ -248,11 +260,14 @@ section{
 	margin-top: 100px;
 	margin-left: 55px;
 }
+
 .div-galeria{
 	display:flex;
 	flex-wrap: wrap;
 	align-items: center;
-}
+	max-width: 90%;
+} 
+
 .div-galeria img{
 	width: 17%;
 	margin-top: 14px;
@@ -260,25 +275,39 @@ section{
 	margin-left: 1%;
 	margin-right: 1%;
 }
-.next1{
-	width: 3%;
-	align-self: flex-start;
-	margin-top: 10px;
-}
-.next2{
-	width: 3%;
-	transform: rotate(180deg);
-	align-self: flex-end;
-	margin-bottom: 10px;
 
+.div-galeria::after {
+	content: "";
+	position: absolute;
+  width: 40px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid rgb(122, 5, 131);
+  border-bottom: 35px solid transparent;
+  border-top: 35px solid transparent;
+  top: 20px;
+  left: -70px;
 }
+
+.div-galeria::before {
+	content: "";
+	position: absolute;
+  width: 40px;
+  border-left: 35px solid rgb(122, 5, 131);;
+  border-right: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-top: 35px solid transparent;
+  top: 227px;
+  right: -12px;
+}
+
 .div-contri{
-	position: relative;
-	width: 40%;
-	height: 30%;
-	left: 50%;
-	top: 29%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-left: 50%;
+	padding-top: 35%;
 }
+
 .div-contri h2{
 	font-family: 'Catamaran', sans-serif;
 	font-size: 26px;
@@ -287,27 +316,33 @@ section{
 	text-align: left;
 	line-height: 31.2px;
 	letter-spacing: 0em;
-	left: 10%;
+	margin: 20px 20px;
 }
+
 .div-contri div{
-	position: absolute;
-	margin: 20px;
+	max-width: 70%;
 	padding-left: 0;
 }
+
 .doemat{
-	top: 2%;
-	left: 6%;
-	height: 43%;
-	width: 35%;
+	display: flex;
+}
+
+.doemat p{
 	border-bottom: solid #fff 7px;
 }
-.doeali{
-	top: 10%;
-	left: 50%;
-	height: 48%;
-	width: 35%;
-	border-bottom: solid #fff 7px;
+
+.doeali {
+		font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	font-style: normal;
+	text-align: center;
+	line-height: 24px;
+	letter-spacing: 0em;
+	width: 70%;
 }
+
 .div-contri div p{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 18px;
@@ -315,52 +350,52 @@ section{
 	font-style: normal;
 	text-align: left;
 	letter-spacing: 0em;
-	top: 8%;
-	padding: 0;
-	bottom: 0;
-
+	margin: 20px 20px;
 }
+
 .div-contri div p span {
 	font-weight: bold;
 }
 
-.div-contri p{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 18px;
-	color: rgb(255, 255, 255);
-	font-style: normal;
-	text-align: center;
-	line-height: 24px;
-	letter-spacing: 0em;
-	position: absolute;
-	bottom: 20px;
-	padding: 0 10%;
-}
 footer{
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	bottom: 0px;
-	background: purple;
+	background: rgb(170, 68, 136);
 	width: 100%;
 	height: 10%;
-	padding-right: 30%;
-	padding-left: 3%;
 }
-footer ul li{
-	display: inline;
-}
-footer img{
-	width: 25%;
-	padding: 2%;
 
+footer .container {
+	display: flex;
+	max-width: 70%;
+	margin: 0 auto;
 }
+
+footer ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	max-width: 20%;
+	margin: 0 5%;
+}
+
+footer ul li{
+	list-style: none;
+}
+
+footer img {
+	width: 25%;
+	min-width: 40px;
+	padding: 2% 2%;
+}
+
 footer p{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 18px;
 	color: rgb(255, 255, 255);
 	font-style: normal;
 	text-align: left;
-	/*line-height: 16.8px;*/
 	letter-spacing: 0em;
 }
