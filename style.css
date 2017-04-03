@@ -23,6 +23,7 @@ header{
 	background: url(assets/edit3.jpg) repeat-x bottom left;
 	background-size: 100%;
 	overflow: hidden;
+	height: 100vh;
 	/*background-position: center;*/
 }
 
@@ -62,8 +63,11 @@ nav ul li:last-child{
 }
 
 .onda{
-	margin-top: 20px;
+	margin-top: 60px;
 	width: 105%;
+}
+.onda-mobile{
+	display: none;
 }
 
 header h1 {
@@ -76,8 +80,8 @@ header h1 {
 	text-align: left;
 	line-height: 31.2px;
 	letter-spacing: 0em;
-	top: 68%;
-	left: 58%;
+	top: 72%;
+	left: 60%;
 }
 
 header h2 {
@@ -89,23 +93,27 @@ header h2 {
 	text-align: left;
 	line-height: 27.6px;
 	letter-spacing: 0em;
-	top: 78%;
-	left: 58%;
+	top: 82%;
+	left: 60%;
 }
 
 .logo{
 	position: absolute;
 	bottom: 20px;
-	right: 3%;
+	right: 2%;
 	width: 9%;
+
 }
 
 main{
 	display: flex;
 	flex-direction: column;
 }
-.fundosobre{
-	position: absolute;
+#sobre{
+	height: 100vh;
+	background: url(assets/assets-02-desktop.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 #sobre h2 {
@@ -225,6 +233,7 @@ main{
 	background: url(assets/assets-03-desktop.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
+	height: 210vh;
 }
 .galeria{
 	display: flex;
@@ -401,8 +410,9 @@ footer p{
 	header{
 		display: flex;
 		width: 100%;
-		background-size: 120%;
-		background-position: center;
+		height: 200vh;
+		background-size: 230%;
+		background-position-x: 60%;
 	}
 	header h1, header h2{
 		display: none;
@@ -420,7 +430,9 @@ footer p{
 		justify-content: center;
 		width: 100%;
 		padding: 0;
-		margin-top: 10px;
+		margin: 0 auto;
+		margin-top: 40px;
+
 	}
 	nav ul li{
 		margin: 2% 0;
@@ -429,32 +441,76 @@ footer p{
 		/*width: 116%;*/
 		display: none;
 	}
-	.ondamobile{
+	.onda-mobile{
+		position: relative;
 		display: block;
-		width: 100%;
+		min-width: 110vw;
+		bottom: 0;
 	}
 	.logo{
 		position: relative;
-		max-width: 250px;
-		margin-left: 60px;
+		width: 25%;
+		left: 0;
+		margin: 0 auto;
 		margin-top: 40%;
 	}
+	#sobre{
+		background: url(assets/assets-2-mobile.svg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height: 170vh;
+	}
+	#sobre h2{
+		margin-top: 15%;
+		padding-left: 30%;
+	}
+	#sobre p{
+		width: 80%;
+		margin-top: 5%;
+		padding-left: 30%;
+	}
+	.atividade1 h2{
+		right: 9%;
+	}
+	.atividade1 p {
+   		width: 80%;
+   		right: 10%;
+   		bottom: 5px;
+   }
+   .atividade2{
+   		flex-direction: column;
+   }
+   .atividade2 .oficina{
+	   	width: 60%;
+	   	margin: 0 auto;
+   }
+   .oficina h3{
+   		width: 100%;
+   		font-size: 30px;
+   		margin: 0;
+   		margin-top: 30px;
+   }
+   .oficina p{
+   		width: 100%;
+   		margin: 0;
+   		margin-top: 50px;
+   		font-size: 20px;
+   		line-height: 35px;
+   }
+   .oficina ul li{
+   		width: 100%;
+   		margin: 0;
+   		margin-top: 40px;
+   		font-size: 22px;
+   		line-height: 10px;
+   }
 	.div-galeria {
  	   flex-direction: column;
  	}
    .div-galeria img {
    		width: 60%;
     }
-   .atividade1 p {
-   	width: 70%;
-   }
-   .atividade2{
-   	flex-direction: column;
-   }
-   .atividade2 .oficina{
-   	width: 70%;
-   	margin: 0 auto;
-   }
+   
    footer .container{
    	flex-direction: column;
    	align-items: center;
@@ -462,4 +518,10 @@ footer p{
    	max-width: 60%;
    	text-align: center;
    }
+}
+
+@media (max-width: 600px){
+	header{
+		width: 150vh;
+	}
 }
