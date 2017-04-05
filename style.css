@@ -23,7 +23,7 @@ header{
 	background: url(assets/edit3.jpg) repeat-x bottom left;
 	background-size: 100%;
 	overflow: hidden;
-	height: 100vh;
+	height: 110vh;
 	/*background-position: center;*/
 }
 
@@ -63,7 +63,7 @@ nav ul li:last-child{
 }
 
 .onda{
-	margin-top: 60px;
+	margin-top: 75px;
 	width: 105%;
 }
 .onda-mobile{
@@ -458,16 +458,16 @@ footer p{
 		background: url(assets/assets-2-mobile.svg);
 		background-repeat: no-repeat;
 		background-size: 100%;
-		height: 170vh;
+		height: 190vh;
 	}
 	#sobre h2{
 		margin-top: 15%;
-		padding-left: 30%;
+		padding-left: 28%;
 	}
 	#sobre p{
 		width: 80%;
 		margin-top: 5%;
-		padding-left: 30%;
+		padding-left: 28%;
 	}
 	.atividade1 h2{
 		right: 9%;
@@ -481,12 +481,12 @@ footer p{
  		flex-direction: column;
   }
   .atividade2 .oficina{
-   	width: 60%;
-   	margin: 0 auto;
+	   	width: 60%;
+	   	margin: 0 auto;
   }
   .oficina h3{
  		width: 100%;
- 		font-size: 30px;
+ 		font-size: 2em;
  		margin: 0;
  		margin-top: 30px;
   }
@@ -494,40 +494,62 @@ footer p{
  		width: 100%;
  		margin: 0;
  		margin-top: 50px;
- 		font-size: 20px;
+ 		font-size: 1.5em;
  		line-height: 35px;
   }
   .oficina ul li{
  		width: 100%;
  		margin: 0;
  		margin-top: 40px;
- 		font-size: 22px;
+ 		font-size: 1.5em;
  		line-height: 10px;
   }
-  .galeria{
- 		height: 80%;
+  .contribua{
+	  	background: url(assets/assets-3-mobile.svg);
+		background-repeat: no-repeat;
+		background-size: 100%;
   }
-	.div-galeria {
- 	  flex-direction: column;
+  .galeria{
+ 		height: 50%;
+  }
+  .div-galeria {
+ 	  	/*flex-direction: column;*/
  	}
   .div-galeria img {
-   	width: 30%;
+   		width: 10%;
   }
   #div-contri {
-  	padding: 2% 5%;
-  	background: #FC6E63;
+	  	padding: 2% 5%;
+	/*  	background: #FC6E63;*/
+  }
+  #div-contri h2{
+  		padding-left: 43%;
+  		margin: 0;
+  		font-size: 3em;
+  }
+  .doe{
+	  	flex-direction: column;
+	  	margin-left: 38%;
+	  	margin-top: 7%;
+  }
+  .doe p{
+  		width: 70%;
+  		font-size: 1.5em;
+  }
+  .texto{
+  	display: none;
   }
 
   footer {
-  	margin-top: 5%;
+  		margin-top: 5%;
   }
 
    footer .container{
-   	flex-direction: column;
-   	align-items: center;
-   	justify-content: center;
-   	max-width: 60%;
-   	text-align: center;
+	   	flex-direction: column;
+	   	align-items: center;
+	   	justify-content: center;
+	   	max-width: 60%;
+	   	text-align: center;
    }
 }
 
