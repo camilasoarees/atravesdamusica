@@ -504,11 +504,16 @@ footer p{
    		font-size: 22px;
    		line-height: 10px;
    }
+   .galeria{
+   	height: 200%;
+   	flex-wrap: wrap;
+   }
 	.div-galeria {
  	   flex-direction: column;
  	}
    .div-galeria img {
    		width: 60%;
+
     }
    
    footer .container{
