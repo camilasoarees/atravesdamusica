@@ -446,7 +446,7 @@ footer p{
 		display: block;
 		min-width: 110vw;
 		bottom: 0;
-	}
+    }
 	.logo{
 		position: relative;
 		width: 25%;
@@ -458,7 +458,7 @@ footer p{
 		background: url(assets/assets-2-mobile.svg);
 		background-repeat: no-repeat;
 		background-size: 100%;
-		height: 160vh;
+		height: 180vh;
 	}
 	#sobre h2{
 		margin-top: 15%;
@@ -471,74 +471,77 @@ footer p{
 	}
 	.atividade1 h2{
 		right: 9%;
-	}
+  	}
 	.atividade1 p {
    		width: 80%;
    		right: 10%;
    		bottom: 5px;
-   }
-  .atividade2{
+  	}
+    .atividade2{
  		flex-direction: column;
-  }
-  .atividade2 .oficina{
+  	}
+    .atividade2 .oficina{
 	   	width: 60%;
 	   	margin: 0 auto;
-  }
-  .oficina h3{
+  	}
+    .oficina h3{
  		width: 100%;
  		font-size: 2em;
  		margin: 0;
  		margin-top: 30px;
-  }
-  .oficina p{
+ 		line-height: 1.5em;
+  	}
+    .oficina p{
  		width: 100%;
  		margin: 0;
  		margin-top: 50px;
  		font-size: 1.5em;
  		line-height: 35px;
-  }
-  .oficina ul li{
+  	}
+    .oficina ul li{
  		width: 100%;
  		margin: 0;
  		margin-top: 40px;
  		font-size: 1.5em;
  		line-height: 10px;
-  }
-  .contribua{
+  	}
+    .contribua{
 	  	background: url(assets/assets-3-mobile.svg);
 		background-repeat: no-repeat;
 		background-size: 100%;
-  }
-  .galeria{
+  	}
+    .galeria{
  		height: 45%;
-  }
-  .div-galeria {
+  	}
+    .div-galeria {
  	  	/*flex-direction: column;*/
  	}
-  .div-galeria img {
+    .div-galeria img {
    		width: 10%;
-  }
-  #div-contri {
+  	}
+    #div-contri {
 	  	padding: 2% 5%;
+	  	padding-top: 5%;
 	/*  	background: #FC6E63;*/
-  }
-  #div-contri h2{
+  	}
+    #div-contri h2{
   		padding-left: 43%;
   		margin: 0;
   		font-size: 3em;
-  }
-  .doe{
+  	}
+    .doe{
 	  	flex-direction: column;
-	  	margin-left: 38%;
-	  	margin-top: 0;
-  }
-  .doe p{
-  		width: 70%;
+	  	margin-left: 42%;
+	  	margin-top: 3%;
+  	}
+    .doe p{
+  		width: 80%;
   		font-size: 1.5em;
-  }
-  .texto{
+  		margin: 0;
+  	}
+    .texto{
   	display: none;
-  }
+  	}
 
    footer .container{
 	   	flex-direction: column;
@@ -546,18 +549,172 @@ footer p{
 	   	justify-content: center;
 	   	max-width: 60%;
 	   	text-align: center;  	
-   }
+   	}
 }
 
 @media (max-width: 600px){
 	header{
-		width: 150vh;
+		width: 100%;
+		height: 150vh;
 	}
 	nav{
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		padding: 0;
+		padding: 0;	
+	}
+	#sobre{
+		height: 140vh;
+	}
+	#sobre h2{
+		margin-top: 2%;
+		padding-left: 29%;
+	}
+	#sobre p{
+		width: 75%;
+		margin-top: 5%;
+		padding-left: 28%;
+		line-height: 22px;
+	}
+	.oficina h3{
+ 		width: 100%;
+ 		font-size: 1.7em;
+ 		margin: 0;
+  	}
+    .oficina p{
+ 		width: 100%;
+ 		margin: 0;
+ 		margin-top: 20px;
+ 		font-size: 1.2em;
+ 		line-height: 30px;
+  	}
+    .oficina ul li{
+ 		width: 100%;
+ 		margin: 0;
+ 		margin-top: 35px;
+ 		font-size: 1.5em;
+ 		line-height: 10px;
+  	}
+    .contribua{
+  		height: 185vh;
+  	}
+    .galeria{
+ 		height: 40%;
+  	}
+    #div-contri {
+   		padding: 0;
+  		padding-top: 5%;
+  		/*background: #FC6E63;*/
+  		height: 45%;
+  	}		
+    #div-contri h2{
+  		padding-left: 42%;
+  		margin: 0;
+  		font-size: 2.5em;
+  	}
+    .doe{
+	  	flex-direction: column;
+	  	margin-left: 40%;
+	  	margin-top: 2%;
+  	}
+    .doe p{
+  		width: 100%;
+  		font-size: 1.4em;
+  		margin: 0;
+  	}
+}
+
+@media (max-width: 400px){
+
+	header{
+		width: 100%;
+		height: 110vh;
+	}
+	.logo{
+		position: relative;
+		width: 25%;
+		left: 0;
+		margin: 0 auto;
+		margin-top: 55%;
+	}
+	#sobre{
+		background-size: 120%;
+		height: 95vh;
+	}
+	#sobre h2{
+		padding-left: 55%;
+		margin: 0;
+		padding-top: 10%;
+	}
+	#sobre p{
+		width: 95%;
+		padding: 2%;
+		padding-left: 35%;
+		line-height: 17px;
+		margin: 0;
+	}
+	.atividade1{
+		margin: 0;
+		padding-left: 30%;
+		width: 100%;
+	}
+	.atividade1 h2{
+		margin: 0;
+		margin-top: 10%;
+	}
+	.atividade2 img{
+		width: 110%;
+	}
+	.oficina h3{
+ 		width: 100%;
+ 		font-size: 1em;
+ 		margin: 0;
+  	}
+    .oficina p{
+ 		width: 100%;
+ 		margin: 0;
+ 		margin-top: 5px;
+ 		font-size: 1em;
+ 		line-height: 17px;
+  	}
+  	 .oficina ul li{
+ 		width: 100%;
+ 		margin: 0;
+ 		margin-top: 25px;
+ 		font-size: 1.2em;
+ 		line-height: 10px;
+  	}
+  	.contribua{
+  		height: 120vh;
+  	}
+  	/*#div-contri {
+   		padding: 0;
+	  	padding: 2% 5%;
+  		padding-top: 5%;
+  		background: #FC6E63;
+  		height: 45%;
+  	}		*/
+  	#div-contri{
+  		height: 230px;
+  		margin-top: 5%;
+  		padding: 0;
+  		/*padding-top: 5%;*/
+  	}
+  	#div-contri h2{
+  		padding-left: 42%;
+  		margin: 0;
+  		font-size: 1.5em;
+  	}
+    .doe{
+	  	flex-direction: column;
+	  	margin: 0;
+	  	margin-left: 40%;
+  	}
+  	.doe p{
+  		width: 100%;
+  		font-size: 1em;
+		margin: 0;
+		line-height: 17px;
 	}
 }
