@@ -80,8 +80,8 @@ header h1 {
 	text-align: left;
 	line-height: 31.2px;
 	letter-spacing: 0em;
-	top: 72%;
-	left: 60%;
+	top: 77%;
+	left: 56%;
 }
 
 header h2 {
@@ -93,8 +93,8 @@ header h2 {
 	text-align: left;
 	line-height: 27.6px;
 	letter-spacing: 0em;
-	top: 82%;
-	left: 60%;
+	top: 87%;
+	left: 65%;
 }
 
 .logo{
@@ -211,7 +211,7 @@ main{
 }
 .oficina p{
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	color: rgb(255,255,255);
 	font-style: normal;
 	text-align: left;
@@ -243,19 +243,18 @@ main{
 }
 .cont-galeria{
 	display: flex;
-	/*flex-direction: row;*/
 	justify-content: center;
 }
 .galeria h2{
 	font-family: 'Catamaran', sans-serif;
-	font-size: 26px;
+	font-size: 30px;
 	color: rgb(122, 5, 131);
 	text-transform: uppercase;
 	text-align: left;
 	line-height: 31.2px;
 	letter-spacing: 0em;
 	margin-top: 100px;
-	margin-left: 55px;
+	margin-left: 80px;
 }
 
 .div-galeria{
@@ -307,7 +306,7 @@ main{
 
 #div-contri h2{
 	font-family: 'Catamaran', sans-serif;
-	font-size: 26px;
+	font-size: 50px;
 	color: rgb(255, 255, 255);
 	text-transform: uppercase;
 	text-align: left;
@@ -317,7 +316,7 @@ main{
 }
 
 #div-contri div{
-	max-width: 70%;
+	max-width: 75%;
 	padding-left: 0;
 }
 
@@ -327,7 +326,7 @@ main{
 
 .doe p{
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	color: rgb(255, 255, 255);
 	font-style: normal;
 	text-align: left;
@@ -337,26 +336,15 @@ main{
 	padding: 10px;
 }
 
-.texto {
-		font-family: 'Source Sans Pro', sans-serif;
-	font-size: 18px;
+.texto p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
 	color: rgb(255, 255, 255);
 	font-style: normal;
 	text-align: center;
-	line-height: 24px;
+	padding-left: 15px;
 	letter-spacing: 0em;
-	width: 70%;
 	bottom: 2px;
-}
-
-.texto p{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 18px;
-	color: rgb(255, 255, 255);
-	font-style: normal;
-	text-align: left;
-	letter-spacing: 0em;
-	margin: 20px 20px;
 }
 
 #div-contri div p span {
@@ -458,7 +446,7 @@ footer p{
 		background: url(assets/assets-2-mobile.svg);
 		background-repeat: no-repeat;
 		background-size: 100%;
-		height: 180vh;
+		height: 160vh;
 	}
 	#sobre h2{
 		margin-top: 15%;
@@ -494,9 +482,9 @@ footer p{
     .oficina p{
  		width: 100%;
  		margin: 0;
- 		margin-top: 50px;
+ 		margin-top: 30px;
  		font-size: 1.5em;
- 		line-height: 35px;
+ 		line-height: 29px;
   	}
     .oficina ul li{
  		width: 100%;
@@ -511,17 +499,11 @@ footer p{
 		background-size: 100%;
   	}
     .galeria{
- 		height: 45%;
-  	}
-    .div-galeria {
- 	  	/*flex-direction: column;*/
- 	}
-    .div-galeria img {
-   		width: 10%;
-  	}
+		display: none;
+	}
     #div-contri {
-	  	padding: 2% 5%;
-	  	padding-top: 5%;
+    	margin-top: 75%;
+	  	padding: 0;
 	/*  	background: #FC6E63;*/
   	}
     #div-contri h2{
@@ -531,16 +513,17 @@ footer p{
   	}
     .doe{
 	  	flex-direction: column;
-	  	margin-left: 42%;
+	  	margin-left: 40%;
 	  	margin-top: 3%;
   	}
     .doe p{
-  		width: 80%;
+  		width: 70%;
   		font-size: 1.5em;
   		margin: 0;
+  		line-height: 40px;
   	}
     .texto{
-  	display: none;
+  		display: none;
   	}
 
    footer .container{
@@ -565,17 +548,17 @@ footer p{
 		padding: 0;	
 	}
 	#sobre{
-		height: 140vh;
+		height: 130vh;
 	}
 	#sobre h2{
-		margin-top: 2%;
-		padding-left: 29%;
+		margin: 0;	
+		padding-left: 31%;
 	}
 	#sobre p{
 		width: 75%;
-		margin-top: 5%;
+		margin: 0;
 		padding-left: 28%;
-		line-height: 22px;
+		line-height: 21px;
 	}
 	.oficina h3{
  		width: 100%;
@@ -585,33 +568,33 @@ footer p{
     .oficina p{
  		width: 100%;
  		margin: 0;
- 		margin-top: 20px;
+ 		margin-top: 10px;
  		font-size: 1.2em;
- 		line-height: 30px;
+ 		line-height: 25px;
   	}
     .oficina ul li{
  		width: 100%;
  		margin: 0;
- 		margin-top: 35px;
- 		font-size: 1.5em;
- 		line-height: 10px;
+ 		margin-top: 25px;
+ 		font-size: 1.4em;
+ 		line-height: 12px;
   	}
     .contribua{
-  		height: 185vh;
+  		height: 165vh;
   	}
     .galeria{
- 		height: 40%;
+ 		display: none;
   	}
     #div-contri {
    		padding: 0;
-  		padding-top: 5%;
+   		margin-top: 70%;
   		/*background: #FC6E63;*/
   		height: 45%;
   	}		
     #div-contri h2{
   		padding-left: 42%;
   		margin: 0;
-  		font-size: 2.5em;
+  		font-size: 2.3em;
   	}
     .doe{
 	  	flex-direction: column;
@@ -619,13 +602,15 @@ footer p{
 	  	margin-top: 2%;
   	}
     .doe p{
-  		width: 100%;
+  		width: 75%;
+  		bottom: 10px;
   		font-size: 1.4em;
   		margin: 0;
+  		line-height: 28px;
   	}
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
 
 	header{
 		width: 100%;
@@ -647,11 +632,11 @@ footer p{
 		padding-top: 10%;
 	}
 	#sobre p{
-		width: 95%;
+		width: 90%;
 		padding-top: 5%;
 		font-size: 1em;
 		padding-left: 35%;
-		line-height: 16px;
+		line-height: 18px;
 		margin: 0;
 	}
 	.atividade1{
@@ -668,7 +653,7 @@ footer p{
 	}
 	.oficina h3{
  		width: 100%;
- 		font-size: 1em;
+ 		font-size: 1.3em;
  		margin: 0;
   	}
     .oficina p{
@@ -676,34 +661,30 @@ footer p{
  		margin: 0;
  		margin-top: 5px;
  		font-size: 1em;
- 		line-height: 17px;
+ 		line-height: 18px;
   	}
   	 .oficina ul li{
  		width: 100%;
  		margin: 0;
- 		margin-top: 25px;
+ 		margin-top: 22px;
  		font-size: 1.2em;
- 		line-height: 10px;
+ 		line-height: 7px;
   	}
   	.contribua{
-  		height: 120vh;
+  		height: 100vh;
   	}
-  	/*#div-contri {
-   		padding: 0;
-	  	padding: 2% 5%;
-  		padding-top: 5%;
-  		background: #FC6E63;
-  		height: 45%;
-  	}		*/
+  	.galeria{
+  		display: none;
+  	}
   	#div-contri{
   		height: 230px;
-  		margin-top: 5%;
-  		padding: 0;
-  		/*padding-top: 5%;*/
+  		padding: 20px;
+  		margin-top: 60%;
   	}
   	#div-contri h2{
   		padding-left: 42%;
   		margin: 0;
+  		padding-top: 12px;
   		font-size: 1.5em;
   	}
     .doe{
@@ -712,9 +693,101 @@ footer p{
 	  	margin-left: 40%;
   	}
   	.doe p{
-  		width: 100%;
-  		font-size: 1em;
+  		width: 75%;
+  		font-size: 1.1em;
 		margin: 0;
-		line-height: 17px;
+		padding: 0;
+		padding-top: 10px;
+		line-height: 22px;
+		border-bottom: solid #fff 2px;
 	}
+}
+@media (max-width: 350px){
+	header{
+		width: 100%;
+		height: 65vh;
+	}
+	#sobre{
+		background-size: 120%;
+		height: 75vh;
+	}
+	#sobre h2{
+		padding-left: 37%;
+		margin: 0;
+		padding-top: 10%;
+	}
+	#sobre p{
+		width: 90%;
+		padding-top: 3%;
+		font-size: 0.9em;
+		padding-left: 35%;
+		line-height: 14px;
+		margin: 0;
+	}
+	.atividade1{
+		margin: 0;
+		padding-left: 30%;
+		width: 115%;
+	}
+	.atividade2 img{
+		width: 120%;
+	}
+	.oficina h3{
+ 		width: 120%;
+ 		font-size: 1.2em;
+ 		margin: 0;
+  	}
+    .oficina p{
+ 		width: 120%;
+ 		margin: 0;
+ 		margin-top: 4px;
+ 		font-size: 1em;
+ 		line-height: 16px;
+  	}
+  	 .oficina ul li{
+ 		width: 100%;
+ 		margin: 0;
+ 		margin-top: 25px;
+ 		font-size: 1.1em;
+ 		line-height: 5px;
+  	}
+  	.oficina div{
+  		border-bottom: none;
+  	}
+  	.contribua{
+  		height: 83vh;
+  	}
+  	.galeria{
+  		display: none;
+  	}
+  	#div-contri{
+		background-color: #FC6E63;
+  		height: 320px;
+  		width: 100%;
+  		margin-top: 40%;
+  	}
+  	#div-contri h2{
+  		padding-left: 15%;
+  		margin: 0;
+  		padding-top: 10px;
+  		font-size: 2em;
+  	}
+    .doe{
+	  	flex-direction: column;
+	  	margin: 0;
+	  	padding-top: 25px;
+	  	margin-left: 15%;
+  	}
+  	.doe p{
+  		width: 100%;
+  		font-size: 1.1em;
+		margin: 0;
+		padding: 0;
+		line-height: 30px;
+		border-bottom: solid #fff 3px;
+	}
+	footer .container p{
+		font-size: 1em;
+		line-height: 20px;  	
+   	}
 }
