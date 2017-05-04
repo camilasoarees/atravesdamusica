@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Através da Música</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+		@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);*/
+		@import url(https://file.myfontastic.com/kMfFMVaLxattXkr7mDMeqK/icons.css);
+		@import url('https://fonts.googleapis.com/css?family=Catamaran:300,900|Source+Sans+Pro');
+		* {
+		  box-sizing: border-box;
+		  margin: 0;
+		  padding: 0;
+		}
+
+		body {
+		  background: #013a57;
+		  color: #FDFDFD;
+		  font-family: 'Catamaran', sans-serif;
+		}
+
+		img {
+		  display: block;
+		  width: 100%;
+		  height: auto;
+		}
+
+		h1 {
+		  font-family: 'Catamaran', sans-serif;
+		  margin: 1em;
+		  text-align: center;
+		  font-weight: bold;
+		}
+
+		.gallery-container {
+		  width: 90%;
+		  max-width: 1100px;
+		  margin: 0 auto;
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -ms-flex-wrap: wrap;
+		      flex-wrap: wrap;
+		}
+
+		.gallery-item {
+		  width: 100%;
+		  margin: 1em;
+		  box-shadow: 0 0 0 2px #070D12, 0 0 0 4px #FDFDFD;
+		  cursor: pointer;
+		  position: relative;
+		  overflow: hidden;
+		}
+		@media screen and (min-width: 600px) {
+		  .gallery-item {
+		    width: calc(50% - 2em);
+		  }
+		}
+		@media screen and (min-width: 800px) {
+		  .gallery-item {
+		    width: calc(33.33% - 2em);
+		  }
+		}
+		@media screen and (min-width: 1000px) {
+		  .gallery-item {
+		    width: calc(25% - 2em);
+		  }
+		}
+		.gallery-item img {
+		  -webkit-transition: all .3s;
+		  transition: all .3s;
+		}
+		.gallery-item:after {
+		  content: "";
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		  top: 0;
+		  left: 0;
+		  background: url("http://www.sigmapcs.com.mx/img/zoom.png") no-repeat center center rgba(0, 0, 0, 0.75);
+		  opacity: 0;
+		  -webkit-transition: all .3s;
+		  transition: all .3s;
+		}
+		.gallery-item:hover img {
+		  -webkit-transform: scale(1.1);
+		          transform: scale(1.1);
+		}
+		.gallery-item:hover:after {
+		  opacity: 1;
+		}
+
+		/*footer {
+		  margin-top: 2em;
+		  margin-bottom: 2em;
+		  text-align: center;
+		}
+		footer p a {
+		  padding-left: .5em;
+		  color: #078ed4;
+		  font-weight: bold;
+		  text-decoration: none;
+		  text-shadow: 0 0 0 2px #FDFDFD;
+		  -webkit-transition: all .3s;
+		  transition: all .3s;
+		}
+		footer p a:hover {
+		  color: #056da3;
+		}
+		footer .redes {
+		  width: 300px;
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display: flex;
+		  margin: 1em auto 0;
+		}
+		footer .redes a {
+		  -webkit-box-flex: 1;
+		      -ms-flex: 1;
+		          flex: 1;
+		  text-align: center;
+		  display: block;
+		  font-size: 1.2em;
+		  color: #FDFDFD;
+		  text-decoration: none;
+		  line-height: 2em;
+		  margin-right: 1em;
+		  text-shadow: 1px 1px rgba(0, 0, 0, 0.75), 1px 1px  rgba(0, 0, 0, 0.75), 2px 2px  rgba(0, 0, 0, 0.75), 3px 3px  rgba(0, 0, 0, 0.75), 4px 4px  rgba(0, 0, 0, 0.75);
+		  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+		  -webkit-transition: all .3s;
+		  transition: all .3s;
+		  opacity: .75;
+		}
+		footer .redes a:nth-child(even) {
+		  margin-right: 0;
+		}
+		footer .redes a:hover {
+		  opacity: 1;
+		}*/
+
+		[class^="icon-"]:before {
+		  position: relative;
+		  top: .1em;
+		}
+
+		.icon-facebook {
+		  background: #3b5998;
+		}
+
+		.icon-twitter {
+		  background: #00aced;
+		}
+
+		.sigma-modal {
+		  position: fixed;
+		  width: 100%;
+		  height: 100%;
+		  top: 0;
+		  left: 0;
+		  background: rgba(0, 0, 0, 0.75);
+		  -webkit-box-pack: center;
+		      -ms-flex-pack: center;
+		          justify-content: center;
+		  -webkit-box-align: center;
+		      -ms-flex-align: center;
+		          align-items: center;
+		  display: none;
+		}
+		.sigma-modal .icon-close-round {
+		  position: absolute;
+		  top: .5em;
+		  right: .5em;
+		  font-size: 2em;
+		  cursor: pointer;
+		}
+		.sigma-modal img {
+		  margin: 0 auto;
+		  position: relative;
+		  top: -100%;
+		  -webkit-transform: translateY(-50%);
+		          transform: translateY(-50%);
+		  width: 90%;
+		  max-width: 600px;
+		  -webkit-transition: all .3s;
+		  transition: all .3s;
+		}
+	</style>
+</head>
+<body>
+	<h1>Gallery JQUERY</h1>
+	<section class="gallery-container">
+		<div class="gallery-item">
+			<img src="fotos/um.jpg" alt="imagem1">
+		</div>
+		<div class="gallery-item">
+			<img src="fotos/dois.jpg" alt="imagem2">
+		</div>
+		<div class="gallery-item">
+			<img src="fotos/tres.jpg" alt="imagem3">
+		</div>
+		<div class="gallery-item">
+			<img src="fotos/quatro.jpg" alt="imagem4">
+		</div>
+		<div class="gallery-item">
+			<img src="fotos/cinco.jpg" alt="imagem5">
+		</div>
+		<div class="gallery-item">
+			<img src="fotos/seis.jpg" alt="imagem6">|
+		</div>
+		<div class="gallery-item">
+			<img src="fotos/sete.jpg" alt="imagem7">
+		</div>
+		<div class="gallery-item">
+			<img src="fotos/oito.jpg" alt="imagem8">
+		</div>
+		<div class="gallery-item">
+			<img src="fotos/nove.jpg" alt="imagem9">
+		</div><div class="gallery-item">
+			<img src="fotos/dez.jpg" alt="imagem10">
+		</div>
+	</section>
+	<!--<footer>
+		<p>Designed by<a href="http://www.sigmapcs.com.mx">Sigma PCS</a></p>
+		<div class="redes">
+			<a class="icon-facebook" href="https://www.facebook.com/sigmapcs" target="_blank"></a><a class="icon-twitter" href="https://twitter.com/Sigma_PCS" target="_blank"></a>
+		</div>
+	</footer>-->
+	<script>
+		$(function () {
+		    var $lightbox = $("<div class='sigma-modal'></div>");
+		    var $img = $("<img>");
+		    var $caption = $("<p class='caption'></p>");
+		    var $close = $("<div class='icon-close-round'/>");
+		    $lightbox.append($img).append($close);
+		    $('body').append($lightbox);
+		    $('.gallery-item').click(function (e) {
+		        e.preventDefault();
+		        var src = $(this).children('img').attr("src")
+		        $img.attr('src',src);
+		        $lightbox.fadeIn(300);
+		        setTimeout(function(){
+		          $img.css('top','50%');
+		        },100);
+
+		        $lightbox.click(function () {
+		            $lightbox.fadeOut('100');
+		            setTimeout(function(){
+		                $img.css('top','-100%');
+		            },50);
+		        });
+		    });
+		});
+	</script>
+	</body>
+</html>
