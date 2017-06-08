@@ -273,30 +273,6 @@ main{
 }
 
 
-/*.div-galeria::after {
-	content: "";
-	position: absolute;
-  width: 40px;
-  border-left: 35px solid transparent;
-  border-right: 35px solid rgb(122, 5, 131);
-  border-bottom: 35px solid transparent;
-  border-top: 35px solid transparent;
-  top: 20px;
-  left: -70px;
-}
-
-.div-galeria::before {
-	content: "";
-	position: absolute;
-  width: 40px;
-  border-left: 35px solid rgb(122, 5, 131);;
-  border-right: 35px solid transparent;
-  border-bottom: 35px solid transparent;
-  border-top: 35px solid transparent;
-  top: 227px;
-  right: -12px;
-}*/
-
 #div-contri{
 	display: flex;
 	flex-direction: column;
@@ -483,11 +459,12 @@ footer p{
 		background: url(assets/assets-2-mobile.svg);
 		background-repeat: no-repeat;
 		background-size: 100%;
-		height: 160vh;
+		height: 100vh;
 	}
 	#sobre h2{
 		margin-top: 15%;
 		padding-left: 28%;
+    font-size: 30px;
 	}
 	#sobre p{
 		width: 80%;
@@ -495,45 +472,46 @@ footer p{
 		padding-left: 28%;
 	}
 	.atividade1 h2{
-		right: 9%;
-  	}
+		  right: 9%;
+  }
 	.atividade1 p {
    		width: 80%;
    		right: 10%;
    		bottom: 5px;
   	}
     .atividade2{
- 		flex-direction: column;
+ 		 flex-direction: column;
   	}
     .atividade2 .oficina{
 	   	width: 60%;
 	   	margin: 0 auto;
   	}
     .oficina h3{
- 		width: 100%;
- 		font-size: 2em;
- 		margin: 0;
- 		margin-top: 30px;
- 		line-height: 1.5em;
+   		width: 100%;
+   		font-size: 1.8em;
+   		margin: 0;
+   		margin-top: 30px;
+   		line-height: 1.5em;
   	}
     .oficina p{
- 		width: 100%;
- 		margin: 0;
- 		margin-top: 30px;
- 		font-size: 1.5em;
- 		line-height: 29px;
+   		width: 100%;
+   		margin: 0;
+   		margin-top: 15px;
+   		font-size: 1.3em;
+   		line-height: 29px;
   	}
     .oficina ul li{
- 		width: 100%;
- 		margin: 0;
- 		margin-top: 40px;
- 		font-size: 1.5em;
- 		line-height: 10px;
+   		width: 100%;
+   		margin: 0;
+   		margin-top: 40px;
+   		font-size: 1.5em;
+   		line-height: 10px;
   	}
     .contribua{
-	  	background: url(assets/assets-3-mobile.svg);
-		background-repeat: no-repeat;
-		background-size: 100%;
+  	  background: url(assets/assets-3-mobile.svg);
+  		background-repeat: no-repeat;
+  		background-size: 100%;
+      height: 120vh;
   	}
     .galeria{
 		display: none;
@@ -544,20 +522,20 @@ footer p{
 	/*  	background: #FC6E63;*/
   	}
     #div-contri h2{
-  		padding-left: 43%;
+  		padding-left: 40%;
   		margin: 0;
   		font-size: 3em;
   	}
     .doe{
 	  	flex-direction: column;
-	  	margin-left: 42%;
-	  	margin-top: 3%;
+	  	margin-left: 39%;
+	  	margin-top: 4%;
   	}
     .doe p{
-  		width: 90%;
-  		font-size: 1.5em;
+  		width: 76%;
+  		font-size: 1.4em;
   		margin: 0;
-  		line-height: 35px;
+  		line-height: 36px;
   	}
     .texto{
   		display: none;
@@ -584,40 +562,44 @@ footer p{
 		width: 100%;
 		padding: 0;	
 	}
+  .logo{
+    width: 22%;
+    margin-top: 43%;
+  }
 	#sobre{
-		height: 130vh;
+		height: 105vh;
 	}
 	#sobre h2{
 		margin: 0;	
 		padding-left: 31%;
 	}
 	#sobre p{
-		width: 75%;
+		width: 78%;
 		margin: 0;
-		padding-left: 28%;
+		padding-left: 29%;
 		line-height: 21px;
 	}
 	.oficina h3{
  		width: 100%;
- 		font-size: 1.7em;
+ 		font-size: 1.3em;
  		margin: 0;
   	}
     .oficina p{
  		width: 100%;
  		margin: 0;
- 		margin-top: 10px;
- 		font-size: 1.2em;
- 		line-height: 25px;
+ 		margin-top: 5px;
+ 		font-size: 1em;
+ 		line-height: 24px;
   	}
     .oficina ul li{
  		width: 100%;
  		margin: 0;
  		margin-top: 25px;
- 		font-size: 1.4em;
- 		line-height: 12px;
+ 		font-size: 1.2em;
+ 		line-height: 10px;
   	}
     .contribua{
-  		height: 165vh;
+  		height: 135vh;
   	}
     .galeria{
  		display: none;
@@ -629,19 +611,19 @@ footer p{
   		height: 45%;
   	}		
     #div-contri h2{
-  		padding-left: 42%;
+  		padding-left: 40%;
   		margin: 0;
-  		font-size: 2.3em;
+  		font-size: 2.2em;
   	}
     .doe{
 	  	flex-direction: column;
-	  	margin-left: 40%;
-	  	margin-top: 2%;
+	  	margin-left: 39%;
+	  	margin-top: 3%;
   	}
     .doe p{
-  		width: 92%;
+  		width: 74%;
   		bottom: 10px;
-  		font-size: 1.4em;
+  		font-size: 1.2em;
   		margin: 0;
   		line-height: 25px;
   	}
@@ -653,25 +635,26 @@ footer p{
 		width: 100%;
 		height: 85vh;
 	}
+  .onda-mobile{
+    display: none;
+  }
 	.logo{
-		width: 25%;
-		left: 0;
-		margin: 0 auto;
-		margin-top: 65%;
+		width: 35%;
+		margin-top: 60%;
 	}
 	#sobre{
 		background-size: 115%;
-		height: 95vh;
+		height: 110vh;
 	}
 	#sobre h2{
-		padding-left: 38%;
+		padding-left: 40%;
 		margin: 0;
 		padding-top: 10%;
 	}
 	#sobre p{
 		width: 90%;
 		padding-top: 5%;
-		font-size: 1em;
+		font-size: 17px;
 		padding-left: 35%;
 		line-height: 18px;
 		margin: 0;
@@ -686,29 +669,29 @@ footer p{
 		margin-top: 10%;
 	}
 	.atividade2 img{
-		width: 110%;
+		width: 105%;
 	}
 	.oficina h3{
  		width: 100%;
- 		font-size: 1.3em;
+ 		font-size: 1em;
  		margin: 0;
   	}
     .oficina p{
  		width: 100%;
  		margin: 0;
- 		margin-top: 5px;
- 		font-size: 1em;
- 		line-height: 18px;
+ 		margin-top: 2px;
+ 		font-size: 16px;
+ 		line-height: 17px;
   	}
   	 .oficina ul li{
  		width: 100%;
  		margin: 0;
  		margin-top: 22px;
- 		font-size: 1.2em;
- 		line-height: 7px;
+ 		font-size: 1em;
+ 		line-height: 5px;
   	}
   	.contribua{
-  		height: 100vh;
+  		height: 120vh;
   	}
   	.galeria{
   		display: none;
@@ -719,116 +702,255 @@ footer p{
   		margin-top: 60%;
   	}
   	#div-contri h2{
-  		padding-left: 42%;
+  		padding-left: 40%;
   		margin: 0;
-  		padding-top: 12px;
-  		font-size: 1.5em;
+  		padding-top: 15px;
+  		font-size: 1.3em;
   	}
     .doe{
 	  	flex-direction: column;
 	  	margin: 0;
-	  	margin-left: 40%;
+	  	margin-left: 38%;
   	}
   	.doe p{
-  		width: 100%;
-  		font-size: 1.1em;
-		margin: 0;
-		padding: 0;
-		padding-top: 10px;
-		line-height: 22px;
-		border-bottom: solid #fff 2px;
+  		width: 78%;
+  		font-size: 18px;
+  		margin: 0;
+  		padding: 0;
+  		padding-top: 18px;
+      padding-bottom: 10px;
+  		line-height: 19px;
+  		border-bottom: solid #fff 2px;
 	}
 }
+@media (max-width: 400px){
+
+  #sobre{
+      background-size: 120%;
+      height: 80vh;
+  }
+  #sobre h2{
+      padding-left: 48%;
+  }
+  #sobre p{
+      width: 87%;
+      padding-top: 8%;
+      font-size: 14px;
+      padding-left: 38%;
+      line-height: 15px;
+  }
+  .oficina h3{
+      width: 100%;
+      font-size: 18px;
+    }
+    .oficina p{
+      font-size: 13px;
+    }
+     .oficina ul li{
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: 5px;
+    }
+    .contribua{
+      height: 100vh;
+    }
+    .doe p{
+      width: 80%;
+      font-size: 13px;
+      line-height: 20px;
+    }
+}
+
+@media (max-width: 414px){
+    #sobre{
+      background-size: 110%;
+      height: 80vh;
+  }
+  #sobre h2{
+      padding-left: 40%;
+  }
+  #sobre p{
+      width: 85%;
+      padding-top: 8%;
+      font-size: 14px;
+      padding-left: 35%;
+      line-height: 15px;
+  }
+  .oficina h3{
+      font-size: 17px;
+    }
+    .oficina p{
+      font-size: 13px;
+    }
+     .oficina ul li{
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 5px;
+    }
+    .contribua{
+      height: 90vh;
+    }
+    .doe p{
+      width: 80%;
+      font-size: 14px;
+      line-height: 18px;
+    }
+}
+
+@media (max-width: 360px){
+  #sobre{
+      background-size: 120%;
+      height: 80vh;
+  }
+  #sobre p{
+      width: 85%;
+      padding-top: 5%;
+      font-size: 13px;
+      line-height: 14px;
+  }
+  .oficina h3{
+      font-size: 15px;
+    }
+    .oficina p{
+      font-size: 13px;
+    }
+     .oficina ul li{
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 5px;
+    }
+    .contribua{
+      height: 90vh;
+    }
+    .doe p{
+      width: 80%;
+      font-size: 14px;
+      line-height: 18px;
+    }
+}
+
+@media (max-width: 375px){
+  #sobre{
+      background-size: 120%;
+      height: 85vh;
+  }
+  #sobre h2{
+      padding-left: 42%;
+  }
+  #sobre p{
+      width: 90%;
+      font-size: 14px;
+      padding-left: 37%;
+  }
+    .oficina p{
+      width: 105%;
+      font-size: 13px;
+      line-height: 15px;
+    }
+    .contribua{
+      height: 90vh;
+    }
+    .doe p{
+      width: 80%;
+      font-size: 14px;
+      line-height: 14px;
+    }
+}
+
 @media (max-width: 350px){
 	main {
 		overflow-x: hidden;
 	}
 	header{
-		width: 100%;
-		height: 65vh;
+  		width: 100%;
+  		height: 75vh;
 	}
+  .logo{
+      width: 35%;
+      margin-top: 70%;
+  }
 	#sobre{
-		background-size: 120%;
-		height: 75vh;
+  		background-size: 110%;
+  		height: 80vh;
 	}
 	#sobre h2{
-		padding-left: 37%;
-		margin: 0;
-		padding-top: 10%;
+  		padding-left: 35%;
+  		margin: 0;
+  		padding-top: 10%;
 	}
 	#sobre p{
-		width: 90%;
-		padding-top: 3%;
-		font-size: 0.9em;
-		padding-left: 35%;
-		line-height: 14px;
-		margin: 0;
+  		width: 90%;
+  		padding-top: 3%;
+  		font-size: 14px;
+  		padding-left: 32%;
+  		line-height: 13px;
+  		margin: 0;
 	}
 	.atividade1{
-		margin: 0;
-		padding-left: 30%;
-		width: 115%;
+  		margin: 0;
+  		padding-left: 30%;
+  		width: 115%;
 	}
 	.atividade2 img{
-		width: 120%;
-		margin: 0;
+  		width: 110%;
+  		margin: 0;
 	}
 	.oficina h3{
- 		width: 120%;
- 		font-size: 1.2em;
- 		margin: 0;
+   		width: 110%;
+   		font-size: 15px;
+   		margin: 0;
   	}
     .oficina p{
- 		width: 120%;
- 		margin: 0;
- 		margin-top: 0;
- 		font-size: 1em;
- 		line-height: 16px;
+   		width: 110%;
+   		margin: 0;
+   		margin-top: 5px;
+   		font-size: 15px;
+   		line-height: 14px;
   	}
   	 .oficina ul li{
- 		width: 100%;
- 		margin: 0;
- 		margin-top: 25px;
- 		font-size: 1.1em;
- 		line-height: 5px;
+   		width: 100%;
+   		margin: 0;
+   		margin-top: 20px;
+   		font-size: 16px;
+   		line-height: 7px;
   	}
   	.oficina div{
   		border-bottom: none;
   	}
   	.contribua{
-  		height: 83vh;
+  		height: 90vh;
   	}
   	.galeria{
   		display: none;
   	}
   	#div-contri{
-		background-color: #FC6E63;
+		  background-color: #FC6E63;
   		height: 320px;
   		width: 100%;
   		margin-top: 40%;
   	}
   	#div-contri h2{
-  		padding-left: 12%;
+  		padding-left: 10%;
   		margin: 0;
   		padding-top: 10px;
-  		font-size: 2.5em;
+  		font-size: 2em;
   	}
     .doe{
 	  	flex-direction: column;
 	  	margin: 0;
 	  	padding-top: 25px;
-	  	margin-left: 12%;
+	  	margin-left: 10%;
   	}
   	.doe p{
-  		width: 120%;
-  		font-size: 1.1em;
-		margin: 0;
-		padding: 0;
-		line-height: 32px;
-		border-bottom: solid #fff 3px;
+  		width: 110%;
+  		font-size: 1em;
+  		margin: 0;
+  		padding: 0;
+  		line-height: 31px;
+  		border-bottom: solid #fff 3px;
 	}
-	footer .container p{
-		font-size: 1em;
-		line-height: 20px;  	
-   	}
+  	footer .container p{
+    		font-size: 15px;
+    		line-height: 20px;  	
+     	}
 }
