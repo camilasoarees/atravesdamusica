@@ -599,7 +599,7 @@ footer p{
  		line-height: 10px;
   	}
     .contribua{
-  		height: 120vh;
+  		height: 135vh;
   	}
     .galeria{
  		display: none;
@@ -723,6 +723,140 @@ footer p{
   		border-bottom: solid #fff 2px;
 	}
 }
+@media (max-width: 400px){
+
+  #sobre{
+      background-size: 120%;
+      height: 80vh;
+  }
+  #sobre h2{
+      padding-left: 48%;
+  }
+  #sobre p{
+      width: 87%;
+      padding-top: 8%;
+      font-size: 14px;
+      padding-left: 38%;
+      line-height: 15px;
+  }
+  .oficina h3{
+      width: 100%;
+      font-size: 18px;
+    }
+    .oficina p{
+      font-size: 13px;
+    }
+     .oficina ul li{
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: 5px;
+    }
+    .contribua{
+      height: 100vh;
+    }
+    .doe p{
+      width: 80%;
+      font-size: 13px;
+      line-height: 20px;
+    }
+}
+
+@media (max-width: 414px){
+    #sobre{
+      background-size: 110%;
+      height: 80vh;
+  }
+  #sobre h2{
+      padding-left: 40%;
+  }
+  #sobre p{
+      width: 85%;
+      padding-top: 8%;
+      font-size: 14px;
+      padding-left: 35%;
+      line-height: 15px;
+  }
+  .oficina h3{
+      font-size: 17px;
+    }
+    .oficina p{
+      font-size: 13px;
+    }
+     .oficina ul li{
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 5px;
+    }
+    .contribua{
+      height: 90vh;
+    }
+    .doe p{
+      width: 80%;
+      font-size: 14px;
+      line-height: 18px;
+    }
+}
+
+@media (max-width: 360px){
+  #sobre{
+      background-size: 120%;
+      height: 80vh;
+  }
+  #sobre p{
+      width: 85%;
+      padding-top: 5%;
+      font-size: 13px;
+      line-height: 14px;
+  }
+  .oficina h3{
+      font-size: 15px;
+    }
+    .oficina p{
+      font-size: 13px;
+    }
+     .oficina ul li{
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 5px;
+    }
+    .contribua{
+      height: 90vh;
+    }
+    .doe p{
+      width: 80%;
+      font-size: 14px;
+      line-height: 18px;
+    }
+}
+
+@media (max-width: 375px){
+  #sobre{
+      background-size: 120%;
+      height: 85vh;
+  }
+  #sobre h2{
+      padding-left: 42%;
+  }
+  #sobre p{
+      width: 90%;
+      font-size: 14px;
+      padding-left: 37%;
+  }
+    .oficina p{
+      width: 105%;
+      font-size: 13px;
+      line-height: 15px;
+    }
+    .contribua{
+      height: 90vh;
+    }
+    .doe p{
+      width: 80%;
+      font-size: 14px;
+      line-height: 14px;
+    }
+}
+
 @media (max-width: 350px){
 	main {
 		overflow-x: hidden;
